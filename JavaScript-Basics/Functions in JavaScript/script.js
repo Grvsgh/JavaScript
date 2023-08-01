@@ -24,3 +24,17 @@ function sumArray(numbers) {
 let numbersArray = [1, 2, 8, 4, 5];
 let result = sumArray(numbersArray);
 console.log(result);
+
+//4.Write a function that takes a string as a parameter and returns the string in reverse.
+
+function reverseString(str) {
+  let splitString = str.split("");
+
+  let reverseArray = splitString.reverse();
+
+  let joinArray = reverseArray.join("");
+
+  return joinArray;
+}
+
+console.log(reverseString("Gaurav"));
