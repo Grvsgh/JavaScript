@@ -36,5 +36,19 @@ function reverseString(str) {
 
   return joinArray;
 }
-
 console.log(reverseString("Gaurav"));
+
+
+/*5.Write a function that takes an array of strings as a parameter and 
+returns the concatenated string of all elements in the array.*/
+
+function concatenatedString(_concString) {
+  return _concString.join("");
+}
+
+let arrayString = ["Fire", "Air", "Water"];
+
+let arrayStringResult = concatenatedString(arrayString);
+
+console.log(arrayStringResult);
+
