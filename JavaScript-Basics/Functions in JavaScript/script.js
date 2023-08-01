@@ -119,5 +119,16 @@ function evenNum(num) {
 console.log(evenNum(5));
 console.log(evenNum(8));
 
+//11.Write a function that takes an array of numbers as a parameter and returns a new array with only the even numbers.
+
+function getEvenNumbers(arr) {
+  // Use the filter method to create a new array containing only the even numbers
+  const evenNumbers = arr.filter((num) => num % 2 === 0);
+  return evenNumbers;
+}
+
+let numberArr = [1, 2, 3, 4, 5, 6, 7, 8];
+let evenNumbersArray = getEvenNumbers(numberArr);
+console.log(evenNumbersArray); // Output: [2, 4, 6, 8]
 
 
