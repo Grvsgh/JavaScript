@@ -90,3 +90,19 @@ let finalarry = stringLengthArray(arry);
 
 console.log(finalarry);
 
+
+
+/*9.Write a function that takes two strings as parameters and returns true if the two strings
+ are anagrams (contain the same letters but in a different order), otherwise false. */
+
+function areAnagrams(str1, str2) {
+  let sortedStr1 = str1.toLowerCase().split("").sort().join();
+  let sortedStr2 = str2.toLowerCase().split("").sort().join();
+
+  return sortedStr1 === sortedStr2;
+}
+console.log(areAnagrams('listen', 'silent')); // Output: true
+console.log(areAnagrams('hello', 'world'));   // Output: false
+console.log(areAnagrams('debit card', 'bad credit')); // Output: true
+
+
