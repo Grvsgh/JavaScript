@@ -1,6 +1,5 @@
 // Book data array containing objects representing books
 const data = [
-  // ... (include the entire 'data' array here)
   {
     id: 1,
     title: "The Lord of the Rings",
@@ -162,7 +161,7 @@ console.log(newGenres);
 
 // Rest and Spread Operator in Objects
 
-// Create a new object updateBook by copying all properties from book and adding moviePublicationDate and pages
+// Create a new object updateBook by copying all properties from book and adding moviePublicationDate and OverWriting pages property
 const updateBook = { ...book, moviePublicationDate: "2001-12-19", pages: 1210 };
 console.log(updateBook);
 
