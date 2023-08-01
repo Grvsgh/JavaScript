@@ -106,3 +106,18 @@ console.log(areAnagrams('hello', 'world'));   // Output: false
 console.log(areAnagrams('debit card', 'bad credit')); // Output: true
 
 
+//10.Write a function that takes a number as a parameter and returns true if it is even, otherwise false.
+
+function evenNum(num) {
+  if (num % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(evenNum(5));
+console.log(evenNum(8));
+
+
+
