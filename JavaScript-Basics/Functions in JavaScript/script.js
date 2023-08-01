@@ -61,3 +61,16 @@ let numberArray = [1, 2, 3, 8, 12, 4, 6];
 let highestNumberInArray = highestNumber(numberArray);
 console.log(highestNumberInArray);
 
+//7.Write a function that takes an array of numbers as a parameter and returns a new array with all the numbers doubled.
+
+function doubledArray(arr) {
+  let newArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArray.push(arr[i] * 2);
+  }
+  return newArray;
+}
+let array = [1, 2, 3, 4, 5, 6];
+let resultArray = doubledArray(array);
+
+console.log(resultArray);
