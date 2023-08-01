@@ -74,3 +74,19 @@ let array = [1, 2, 3, 4, 5, 6];
 let resultArray = doubledArray(array);
 
 console.log(resultArray);
+
+//8.Write a function that takes an array of strings as a parameter and returns a new array with the length of each string.
+
+function stringLengthArray(arr) {
+  let lengthArray = [];
+  for (let i = 0; i < arr.length; i++) {
+    lengthArray.push(arr[i].length);
+  }
+  return lengthArray;
+}
+
+let arry = ["gaurav", "home", "00helloWORLD"];
+let finalarry = stringLengthArray(arry);
+
+console.log(finalarry);
+
