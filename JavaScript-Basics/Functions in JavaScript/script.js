@@ -52,3 +52,12 @@ let arrayStringResult = concatenatedString(arrayString);
 
 console.log(arrayStringResult);
 
+//6.Write a function that takes an array of numbers as a parameter and returns the highest number in the array.
+
+function highestNumber(high) {
+  return Math.max(...high);
+}
+let numberArray = [1, 2, 3, 8, 12, 4, 6];
+let highestNumberInArray = highestNumber(numberArray);
+console.log(highestNumberInArray);
+
