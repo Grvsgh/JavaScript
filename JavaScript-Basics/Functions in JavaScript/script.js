@@ -141,4 +141,18 @@ function wordCount(strng) {
 console.log(wordCount("hello gaurav!, how are you doing?")); //Output: 6
 
 
+/*13.Write a function that takes an array of numbers as a parameter 
+and returns the product of all the numbers in the array.*/
+
+function productArray(arrayyyy) {
+  let product = 1;
+  for (let i = 0; i < array.length; i++) {
+    product *= array[i];
+  }
+  return product;
+}
+let arrayyy = [1, 2, 3, 4, 5];
+let product = productArray(array);
+console.log(product); // Output will be 120 (1 * 2 * 3 * 4 * 5)
+
 
