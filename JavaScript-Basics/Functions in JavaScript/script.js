@@ -155,4 +155,20 @@ let arrayyy = [1, 2, 3, 4, 5];
 let product = productArray(array);
 console.log(product); // Output will be 120 (1 * 2 * 3 * 4 * 5)
 
+//14.Write a function that takes a string as a parameter and returns the number of vowels in the string.
+function getCount(str) {
+  let newVowelCount = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+  const lowercaseStr = str.toLowerCase(); // Convert the string to lowercase
 
+  for (let char of lowercaseStr) {
+    if (vowels.includes(char)) {
+      newVowelCount++;
+    }
+  }
+  return newVowelCount;
+}
+
+let string = "Hello Gaurav, how are you doing?";
+let finalCount = getCount(string);
+console.log(finalCount);
