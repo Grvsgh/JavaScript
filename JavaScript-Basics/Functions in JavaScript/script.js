@@ -172,3 +172,39 @@ function getCount(str) {
 let string = "Hello Gaurav, how are you doing?";
 let finalCount = getCount(string);
 console.log(finalCount);
+
+
+
+//15.Write a function that takes a number as a parameter and returns true if it is a prime number, otherwise false.
+
+function isPrimeNumber(num) {
+  if (num <= 1) {
+    return false; // Numbers less than or equal to 1 are not prime
+  }
+
+  // Check for divisibility from 2 up to the square root of the number
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false; // If the number is divisible by any other number, it is not prime
+    }
+  }
+
+  return true; // If the number is not divisible by any number other than 1 and itself, it is prime
+}
+
+console.log(isPrimeNumber(5)); // Output: true (5 is a prime number)
+console.log(isPrimeNumber(8)); // Output: false (8 is not a prime number)
+
+/*16.Write a function that takes an array of numbers as a parameter and 
+returns a new array with the numbers sorted in ascending order.*/
+
+function sortNumbersAscending(arr) {
+  // Use the sort() method with a custom sorting function
+  return arr.sort((a, b) => a - b);
+}
+
+// Example usage:
+const numbers = [3, 1, 7, 5, 2, 9, 4];
+const sortedNumbers = sortNumbersAscending(numbers);
+console.log(sortedNumbers); // Output: [1, 2, 3, 4, 5, 7, 9]
+
