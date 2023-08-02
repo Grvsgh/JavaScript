@@ -132,3 +132,13 @@ let evenNumbersArray = getEvenNumbers(numberArr);
 console.log(evenNumbersArray); // Output: [2, 4, 6, 8]
 
 
+//12.Write a function that takes a sentence as a parameter and returns the number of words in the sentence.
+
+function wordCount(strng) {
+  return strng.split(" ").length;
+}
+
+console.log(wordCount("hello gaurav!, how are you doing?")); //Output: 6
+
+
+
