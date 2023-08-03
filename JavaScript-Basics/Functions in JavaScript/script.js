@@ -222,3 +222,12 @@ console.log(newArryy); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 
+//18.Write a function that takes a string as a parameter and returns true if it is a palindrome (reads the same backward as forward), otherwise false.
+
+function palindrome(strings) {
+  return strings === strings.split("").reverse().join();
+}
+
+let strings = "radar";
+let palindromeString = palindrome(strings);
+console.log(palindromeString);
