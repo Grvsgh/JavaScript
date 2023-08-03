@@ -231,3 +231,21 @@ function palindrome(strings) {
 let strings = "radar";
 let palindromeString = palindrome(strings);
 console.log(palindromeString);
+
+
+//19.Write a function that takes an array of strings as a parameter and returns a new array with the strings sorted in alphabetical order.
+function alphabeticalOrder(strings) {
+  return strings.sort();
+}
+
+let arrayString = [
+  "apple",
+  "banana",
+  "cherry",
+  "samosa",
+  "idli",
+  "dosa",
+  "vadapao",
+];
+let newArrayString = alphabeticalOrder(arrayString);
+console.log(newArrayString);
