@@ -208,3 +208,17 @@ const numbers = [3, 1, 7, 5, 2, 9, 4];
 const sortedNumbers = sortNumbersAscending(numbers);
 console.log(sortedNumbers); // Output: [1, 2, 3, 4, 5, 7, 9]
 
+//17.Write a function that takes two arrays as parameters and returns a new array with the elements of both arrays combined.
+
+function bothArray(arry1, arry2) {
+  return arry1.concat(arry2);
+}
+
+let arry1 = [1, 2, 3, 4, 5];
+let arry2 = [6, 7, 8, 9];
+let newArryy = bothArray(arry1, arry2);
+
+console.log(newArryy); // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+
