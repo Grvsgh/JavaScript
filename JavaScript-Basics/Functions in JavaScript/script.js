@@ -249,3 +249,24 @@ let arrayString = [
 ];
 let newArrayString = alphabeticalOrder(arrayString);
 console.log(newArrayString);
+
+
+//20.Write a function that takes a sentence as a parameter and returns the sentence with all the words capitalized.
+
+function capitalizedSentence(sentence) {
+  // Split the sentence into words
+  const words = sentence.split(" ");
+
+  // Capitalize the first letter of each word
+  const capitalizedWords = words.map(
+    (word) => word.charAt(0).toUpperCase() + word.slice(1)
+  );
+
+  // Join the words back together to form the new sentence
+  return capitalizedWords.join(" ");
+}
+
+let sentence = "hello gaurav how are you doing Today?";
+let newSentence = capitalizedSentence(sentence);
+
+console.log(newSentence);
