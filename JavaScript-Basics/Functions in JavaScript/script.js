@@ -285,3 +285,17 @@ function countUpperCase(string) {
 let string = "#Hello Gaurav  HOW Are You Doing";
 let uppercaseCount = countUpperCase(string);
 uppercaseCount;
+
+
+/*22.Write a function that takes an array of strings
+ as a parameter and returns a new array with the strings sorted in alphabetical order.*/
+
+function sortedString(arr) {
+  return arr.sort();
+}
+
+let arr = ["edcba", "zyx", "abc", "bca"];
+let sortedArr = sortedString(arr);
+console.log(sortedArr);
+// Output: ["abc", "bca", "edcba", "zyx"]
+
