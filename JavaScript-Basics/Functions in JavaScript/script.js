@@ -270,3 +270,18 @@ let sentence = "hello gaurav how are you doing Today?";
 let newSentence = capitalizedSentence(sentence);
 
 console.log(newSentence);
+
+
+//21. Write a function that takes a string as a parameter and returns the number of uppercase letters in the string.
+function countUpperCase(string) {
+  let upper = 0;
+
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] >= "A" && string[i] <= "Z") upper++;
+  }
+  return upper;
+}
+
+let string = "#Hello Gaurav  HOW Are You Doing";
+let uppercaseCount = countUpperCase(string);
+uppercaseCount;
