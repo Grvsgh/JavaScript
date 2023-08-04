@@ -388,3 +388,33 @@ const highGradeStudentNames = getHighGradeStudents(students);
 // Output the names of high-grade students
 console.log("Names of students with grade higher than 80:", highGradeStudentNames);
 
+
+//25.Write a function that takes a sentence as a parameter and returns the longest word in the sentence.
+
+function findLongestWord(sentence) {
+  // Split the sentence into an array of words
+  const words = sentence.split(" ");
+  
+  // Initialize a variable to store the longest word
+  let longestWord = "";
+  
+  // Loop through each word in the array
+  for (let i = 0; i < words.length; i++) {
+    // Remove any punctuation from the word
+    const cleanedWord = words[i].replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+    
+    // Compare the length of the current word with the longest word
+    if (cleanedWord.length > longestWord.length) {
+      longestWord = cleanedWord;
+    }
+  }
+  
+  return longestWord;
+}
+
+// Example sentence
+const sentence = "The quick brown fox jumped over the lazy dog.";
+const longestWord = findLongestWord(sentence);
+
+console.log("Longest word in the sentence:", longestWord);
+
