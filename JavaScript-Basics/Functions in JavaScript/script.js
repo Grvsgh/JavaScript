@@ -299,3 +299,17 @@ let sortedArr = sortedString(arr);
 console.log(sortedArr);
 // Output: ["abc", "bca", "edcba", "zyx"]
 
+//23.Write a function that takes a number as a parameter and returns the factorial of that number.
+function factorials(num) {
+  if (num === 0 || num === 1) return 1;
+  for (var i = num - 1; i >= 1; i--) {
+    num *= i;
+  }
+  return num;
+}
+
+let num = 10;
+let Factorialize = factorials(num);
+
+console.log(Factorialize);
+
