@@ -313,3 +313,78 @@ let Factorialize = factorials(num);
 
 console.log(Factorialize);
 
+
+/*
+24.Write a function that takes an array of objects representing students (with properties like name, age, and grade)
+ and returns an array of the names of students who have a grade higher than 80. */
+
+// Function to filter and retrieve names of students with grade higher than 80
+function getHighGradeStudents(studentArray) {
+  // Filter students with grade higher than 80
+  const highGradeStudents = studentArray
+    .filter((student) => student.grade > 80)
+    .map((student) => student.name);
+
+  return highGradeStudents;
+}
+
+// Array of student objects
+const students = [
+  {
+    name: "Alice",
+    age: 18,
+    grade: 90,
+  },
+  {
+    name: "Bob",
+    age: 17,
+    grade: 75,
+  },
+  {
+    name: "Charlie",
+    age: 19,
+    grade: 82,
+  },
+  {
+    name: "David",
+    age: 16,
+    grade: 88,
+  },
+  {
+    name: "Eve",
+    age: 18,
+    grade: 95,
+  },
+  {
+    name: "Frank",
+    age: 17,
+    grade: 78,
+  },
+  {
+    name: "Grace",
+    age: 19,
+    grade: 92,
+  },
+  {
+    name: "Hannah",
+    age: 16,
+    grade: 60,
+  },
+  {
+    name: "Isaac",
+    age: 18,
+    grade: 85,
+  },
+  {
+    name: "Julia",
+    age: 17,
+    grade: 93,
+  },
+];
+
+// Call the function to get names of high-grade students
+const highGradeStudentNames = getHighGradeStudents(students);
+
+// Output the names of high-grade students
+console.log("Names of students with grade higher than 80:", highGradeStudentNames);
+
