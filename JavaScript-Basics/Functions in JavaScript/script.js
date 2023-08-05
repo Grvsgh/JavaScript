@@ -432,3 +432,19 @@ let numbers = [2, 3, 4, 5, 6];
 let squaredArray = arraySquared(numbers);
 squaredArray;
 
+
+28.Write a function that takes a string as a parameter and returns true
+ if it is a valid email address (has the format "user@example.com"), otherwise false. */
+
+function isValidEmail(email) {
+  // Regular expression pattern for a valid email address
+  const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+  // Test the email against the pattern and return the result
+  return pattern.test(email);
+}
+
+// Test the function with example email addresses
+console.log(isValidEmail("gauravsingh01.02.95@gmail.com")); // true
+console.log(isValidEmail("invalid-email")); // false
+
