@@ -418,3 +418,17 @@ const longestWord = findLongestWord(sentence);
 
 console.log("Longest word in the sentence:", longestWord);
 
+//26.Write a function that takes an array of numbers as a parameter and returns a new array with the numbers squared.
+
+function arraySquared(numbers) {
+  let newArraySquare = [];
+  for (let i = 0; i < numbers.length; i++ ) {
+    newArraySquare.push(numbers[i] * numbers[i]);
+  }
+  return newArraySquare;
+}
+
+let numbers = [2, 3, 4, 5, 6];
+let squaredArray = arraySquared(numbers);
+squaredArray;
+
