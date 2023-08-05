@@ -448,3 +448,13 @@ function isValidEmail(email) {
 console.log(isValidEmail("gauravsingh01.02.95@gmail.com")); // true
 console.log(isValidEmail("invalid-email")); // false
 
+/29.Write a function that takes an array of strings as a parameter and returns a new array with the strings reversed.
+
+function reversedArray(strings) {
+  return strings.map((str) => str.split("").reverse().join(""));
+}
+
+let strings = ["Hello", "gaurav", "how", "are", "you", "doing"];
+let arrayReversed = reversedArray(strings);
+console.log(arrayReversed);
+
