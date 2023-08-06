@@ -458,3 +458,13 @@ let strings = ["Hello", "gaurav", "how", "are", "you", "doing"];
 let arrayReversed = reversedArray(strings);
 console.log(arrayReversed);
 
+//30.Write a function that takes an array of numbers as a parameter and returns the average of all the numbers.
+
+function averageArray(number) {
+  const average = number.reduce((a, b) => a + b, 0) / number.length;
+  return average;
+}
+
+let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let arrayAverage = averageArray(number);
+console.log(arrayAverage);
