@@ -525,3 +525,67 @@ let arrayObject = totalNumberOfPages(books);
 // Log the total number of pages to the console
 console.log(arrayObject);
 
+
+/*32.Write a function that takes an object representing a car (with properties like make, model, and year) 
+and returns a sentence describing the car like "This is a 2020 Honda Civic."*/
+function carDescription(carsModel) {
+  return `This is a ${carsModel.year} ${carsModel.make} ${carsModel.model}.`;
+}
+
+const carsModel = [
+  {
+    make: "Toyota",
+    model: "Corolla",
+    year: 2022,
+  },
+  {
+    make: "Honda",
+    model: "Civic",
+    year: 2021,
+  },
+  {
+    make: "Ford",
+    model: "Mustang",
+    year: 2023,
+  },
+  {
+    make: "Chevrolet",
+    model: "Camaro",
+    year: 2022,
+  },
+  {
+    make: "Nissan",
+    model: "Altima",
+    year: 2021,
+  },
+  {
+    make: "Tesla",
+    model: "Model S",
+    year: 2022,
+  },
+  {
+    make: "BMW",
+    model: "X5",
+    year: 2023,
+  },
+  {
+    make: "Mercedes-Benz",
+    model: "E-Class",
+    year: 2022,
+  },
+  {
+    make: "Audi",
+    model: "A4",
+    year: 2021,
+  },
+  {
+    make: "Lexus",
+    model: "RX",
+    year: 2023,
+  },
+];
+
+let carDescription1 = carDescription(carsModel[0]);
+
+console.log(carDescription1);
+
