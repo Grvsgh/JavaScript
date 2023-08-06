@@ -468,3 +468,60 @@ function averageArray(number) {
 let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let arrayAverage = averageArray(number);
 console.log(arrayAverage);
+
+/*31.Write a function that takes an array of objects representing books 
+(with properties like title, author, and pages) and returns the total number of pages of all the books.*/
+
+function totalNumberOfPages(books) {
+  // Use the reduce method to iterate through the array of books
+  // and accumulate the total number of pages
+  return books.reduce((sum, book) => sum + book.pages, 0);
+}
+// Array of book objects with properties like title, author, and pages
+const books = [
+  {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    pages: 336,
+  },
+  {
+    title: "1984",
+    author: "George Orwell",
+    pages: 328,
+  },
+  {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    pages: 180,
+  },
+  {
+    title: "Pride and Prejudice",
+    author: "Jane Austen",
+    pages: 279,
+  },
+  {
+    title: "The Hobbit",
+    author: "J. R. R. Tolkien",
+    pages: 310,
+  },
+  {
+    title: "Brave New World",
+    author: "Aldous Huxley",
+    pages: 288,
+  },
+  {
+    title: "Moby-Dick",
+    author: "Herman Melville",
+    pages: 720,
+  },
+  {
+    title: "Harry Potter and the Sorcerer's Stone",
+    author: "J. K. Rowling",
+    pages: 309,
+  },
+];
+// Call the totalNumberOfPages function with the books array as an argument
+let arrayObject = totalNumberOfPages(books);
+// Log the total number of pages to the console
+console.log(arrayObject);
+
