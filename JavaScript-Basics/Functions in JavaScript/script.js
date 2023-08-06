@@ -589,3 +589,21 @@ let carDescription1 = carDescription(carsModel[0]);
 
 console.log(carDescription1);
 
+
+//33.Write a function that takes a number as a parameter and returns the sum of all the numbers from 1 to that number.
+
+function sumNumbersUpTo(n) {
+  let sum = 0;
+
+  // Loop from 1 to n and add each number to the sum
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+
+  return sum;
+}
+
+// Test the function with a number
+let numberss = 10;
+let result = sumNumbersUpTo(numberss);
+console.log(result); // Output: 55
