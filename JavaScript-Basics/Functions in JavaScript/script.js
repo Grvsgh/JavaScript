@@ -581,7 +581,7 @@ const carsModel = [
   {
     make: "Lexus",
     model: "RX",
-    year: 2023,
+    year: 2024,
   },
 ];
 
