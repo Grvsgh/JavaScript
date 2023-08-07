@@ -70,7 +70,7 @@ function doubledArray(arr) {
   }
   return newArray;
 }
-let array = [1, 2, 3, 4, 5, 6];
+let array = [1, 2, 3, 4, 5, 6,7,8];
 let resultArray = doubledArray(array);
 
 console.log(resultArray);
