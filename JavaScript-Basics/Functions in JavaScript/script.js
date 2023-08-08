@@ -368,7 +368,7 @@ const students = [
   {
     name: "Hannah",
     age: 16,
-    grade: 60,
+    grade: 61,
   },
   {
     name: "Isaac",
