@@ -102,7 +102,7 @@ function areAnagrams(str1, str2) {
   return sortedStr1 === sortedStr2;
 }
 console.log(areAnagrams('listen', 'silent')); // Output: true
-console.log(areAnagrams('hello', 'world'));   // Output: false
+console.log(areAnagrams('hello0', 'world'));   // Output: false
 console.log(areAnagrams('debit card', 'bad credit')); // Output: true
 
 
