@@ -239,7 +239,7 @@ function alphabeticalOrder(strings) {
 }
 
 let arrayString = [
-  "apple",
+  "Apple",
   "banana",
   "cherry",
   "samosa",
@@ -428,7 +428,7 @@ function arraySquared(numbers) {
   return newArraySquare;
 }
 
-let numbers = [2, 3, 4, 5, 6];
+let numbers = [2, 3, 4, 5, 6,8];
 let squaredArray = arraySquared(numbers);
 squaredArray;
 
