@@ -1,4 +1,4 @@
-Here are 70 function-related coding exercises for beginners to practice and better understand the concept of functions in JavaScript:
+Here are 69 function-related coding exercises for beginners to practice and better understand the concept of functions in JavaScript:
 
 1.Write a function that takes two numbers as parameters and returns their sum.
 
