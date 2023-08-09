@@ -140,4 +140,4 @@ Write a function that takes a string as a parameter and returns the number of up
 69.Write a function that takes an object representing a car (with properties like make, model, and year) and returns true if it is a vintage car (year is between 20 and 50 years old), otherwise false.
 
 
-These exercises cover a variety of scenarios and will help you reinforce your understanding of functions in JavaScript
+These exercises cover a variety of scenarios and will help you re-inforce your understanding of functions in JavaScript
