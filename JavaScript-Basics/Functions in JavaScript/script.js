@@ -2,7 +2,7 @@
 function sum(a, b) {
   return a + b;
 }
-console.log(sum(5, 6));
+console.log(sum(5,9));
 
 //2.Write a function that takes a string as a parameter and returns the length of the string.
 
