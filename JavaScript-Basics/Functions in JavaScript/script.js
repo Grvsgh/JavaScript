@@ -57,7 +57,7 @@ console.log(arrayStringResult);
 function highestNumber(high) {
   return Math.max(...high);
 }
-let numberArray = [1, 2, 3, 8, 12, 4, 6];
+let numberArray = [1, 2, 3, 8, 12, 4,17];
 let highestNumberInArray = highestNumber(numberArray);
 console.log(highestNumberInArray);
 
