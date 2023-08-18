@@ -603,6 +603,28 @@ function sumNumbersUpTo(n) {
   return sum;
 }
 
+
+/*34.Write a function that takes a sentence as a parameter and returns 
+the number of occurrences of each word in the sentence as an object.*/
+function wordOccurrences(sentence) {
+  const words = sentence.split(" ");
+  const wordCount = {};
+
+  for (const word of words) {
+    if (wordCount[word]) {
+      wordCount[word]++;
+    } else {
+      wordCount[word] = 1;
+    }
+  }
+
+  return wordCount;
+}
+
+const sentences = "This is a test sentence. This is another test.";
+const occurrences = wordOccurrences(sentences);
+console.log(occurrences);
+
 // Test the function with a number
 let numberss = 10;
 let result = sumNumbersUpTo(numberss);
