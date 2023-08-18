@@ -629,3 +629,26 @@ console.log(occurrences);
 let numberss = 10;
 let result = sumNumbersUpTo(numberss);
 console.log(result); // Output: 55
+
+
+//35.Write a function that takes an array of numbers as a parameter and returns the largest number in the array.
+
+function findLargestNumber(numbers) {
+  if (numbers.length === 0) {
+    return undefined; // Return undefined if the array is empty
+  }
+
+  let largest = numbers[0]; // Assume the first number is the largest
+
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] > largest) {
+      largest = numbers[i]; // Update largest if a larger number is found
+    }
+  }
+
+  return largest;
+}
+
+const numbers1 = [10, 5, 20, 8, 15];
+const largestNumber = findLargestNumber(numbers1);
+console.log("The largest number is:", largestNumber);
