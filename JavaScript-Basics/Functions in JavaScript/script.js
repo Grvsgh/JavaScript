@@ -117,7 +117,7 @@ function evenNum(num) {
 }
 
 console.log(evenNum(11));
-console.log(evenNum(8));
+console.log(evenNum(12));
 
 //11.Write a function that takes an array of numbers as a parameter and returns a new array with only the even numbers.
 
