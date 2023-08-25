@@ -175,7 +175,7 @@ console.log(finalCount);
 
 
 
-//15.Write a function that takes a number as a parameter and returns true if it is a prime number, otherwise false.
+//15.Write a function that takes a number as a parameter and return true if it is a prime number, otherwise false.
 
 function isPrimeNumber(num) {
   if (num <= 1) {
